@@ -23,7 +23,7 @@ export const Producto = ({ producto }: { producto: IProducto }) => {
     return (
         <>
         
-            <div className="grid md:grid-cols-2 gap-12 items-center w-4/5 mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center  mx-auto">
      
             {/* Imagen */}
             <div className="animate-fade-up">

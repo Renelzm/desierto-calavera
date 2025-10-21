@@ -91,7 +91,7 @@ export const Navbar = () => {
                   {item.name}
                 </a>
               ))}
-              <a
+              {/* <a
                 href="#compras"
                 onClick={() => setIsOpen(false)}
                 className="flex items-center gap-2 text-bone hover:text-desert transition-all duration-300 pt-2"
@@ -99,7 +99,7 @@ export const Navbar = () => {
               >
                 <ShoppingCart className="w-5 h-5" />
                 <span className="font-sans text-base tracking-wide">Compras</span>
-              </a>
+              </a> */}
             </div>
           </div>
         )}
