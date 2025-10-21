@@ -8,7 +8,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "/" },
+    { name: "Inicio", href: "/" },
     { name: "Productos", href: "/productos" },
     { name: "Sobre Nosotros", href: "/nosotros" },
     { name: "Contacto", href: "/contacto" },
