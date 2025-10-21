@@ -1,9 +1,106 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  margin: 0 auto;
+  padding: 0rem;
 }
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 3%;
+    --foreground: 40 20% 90%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 40 20% 90%;
+
+    --primary: 38 70% 55%;
+    --primary-foreground: 0 0% 5%;
+
+    --secondary: 30 15% 25%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 30 10% 15%;
+    --muted-foreground: 40 15% 60%;
+
+    --accent: 38 70% 55%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 20% 90%;
+
+    --border: 30 15% 20%;
+    --input: 30 15% 20%;
+    --ring: 38 70% 55%;
+
+    --radius: 0.5rem;
+
+    /* Desert Theme Colors */
+    --desert-sand: 38 70% 55%;
+    --desert-gold: 45 90% 60%;
+    --desert-dark: 30 15% 10%;
+    --desert-stone: 30 15% 25%;
+    --bone-white: 40 20% 90%;
+    
+    /* Gradients */
+    --gradient-desert: linear-gradient(135deg, hsl(30 15% 10%) 0%, hsl(0 0% 5%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 70% 55%) 0%, hsl(45 90% 60%) 100%);
+    
+    /* Effects */
+    --shadow-glow: 0 0 40px hsla(38, 70%, 55%, 0.3);
+    --shadow-deep: 0 20px 60px rgba(0, 0, 0, 0.8);
+    
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 38 70% 55%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 30 15% 20%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 30 15% 20%;
+    --sidebar-ring: 38 70% 55%;
+  }
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -13,10 +110,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
 }
 
 body {
