@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Desierto Calavera",
-  description: "Pagina de cocteleria y licores artesanales",
+  description: "Pagina de cocteleria y licores artesanales de Coahuila",
     keywords: ['Mezcal', 'Sotol', 'Coahuila', 'Licores Artesanales', 'Cocteleria', 'Bebidas Mexicanas', 'Desierto Calavera'],
   openGraph: { 
-    images: "/logo-transparente-blanco.png",
+    images: "/logo-negro.png",
   },
 };
 
