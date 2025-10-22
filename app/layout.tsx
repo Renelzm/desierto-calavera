@@ -15,13 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  // 👇 AÑADE ESTA LÍNEA
+  metadataBase: new URL("https://desierto-calavera.vercel.app"), 
+
   title: "Desierto Calavera",
   description: "Pagina de cocteleria y licores artesanales",
   openGraph: { 
+    // Ahora Next.js convertirá esto en:
+    // "https://tu-dominio.com/logo-transparente-blanco.png"
     images: "/logo-transparente-blanco.png",
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
