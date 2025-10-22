@@ -15,28 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // 👇 AÑADE ESTA LÍNEA
-  metadataBase: new URL("https://desierto-calavera.vercel.app"), 
-
   title: "Desierto Calavera",
   description: "Pagina de cocteleria y licores artesanales",
-  keywords: ['Mezcal', 'Sotol', 'Coahuila', 'Licores Artesanales', 'Cocteleria', 'Bebidas Mexicanas', 'Desierto Calavera'],
- openGraph: { 
-    title: "Desierto Calavera", 
-    description: "Pagina de cocteleria y licores artesanales",
-    images: "/logo-negro.jpg", 
-    locale: "es_MX", 
-    type: "website", 
-  },
-  
-  // También puedes añadir metadata para Twitter (X)
-  twitter: {
-    card: "summary_large_image",
-    title: "Desierto Calavera",
-    description: "Pagina de cocteleria y licores artesanales",
+    keywords: ['Mezcal', 'Sotol', 'Coahuila', 'Licores Artesanales', 'Cocteleria', 'Bebidas Mexicanas', 'Desierto Calavera'],
+  openGraph: { 
     images: "/logo-negro.jpg",
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
