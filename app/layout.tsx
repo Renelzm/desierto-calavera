@@ -20,10 +20,28 @@ export const metadata: Metadata = {
 
   title: "Desierto Calavera",
   description: "Pagina de cocteleria y licores artesanales",
-  openGraph: { 
-    // Ahora Next.js convertirá esto en:
-    // "https://tu-dominio.com/logo-transparente-blanco.png"
-    images: "/logo-negro.jpg",
+  keywords: ['Mezcal', 'Sotol', 'Coahuila', 'Licores Artesanales', 'Cocteleria', 'Bebidas Mexicanas', 'Desierto Calavera'],
+ openGraph: { 
+    title: "Desierto Calavera", 
+    description: "Pagina de cocteleria y licores artesanales",
+    images: [
+      {
+        url: "/logo-negro.jpg", 
+        width: 1200, // 
+        height: 630, //
+        alt: "Logo de Desierto Calavera",
+      }
+    ],
+    locale: "es_MX", 
+    type: "website", 
+  },
+  
+  // También puedes añadir metadata para Twitter (X)
+  twitter: {
+    card: "summary_large_image",
+    title: "Desierto Calavera",
+    description: "Pagina de cocteleria y licores artesanales",
+    images: ["/logo-negro.jpg"],
   },
 };
 export default function RootLayout({
