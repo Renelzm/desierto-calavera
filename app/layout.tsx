@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: { 
     // Ahora Next.js convertirá esto en:
     // "https://tu-dominio.com/logo-transparente-blanco.png"
-    images: "/logo-transparente-blanco.png",
+    images: "/logo-blanco.png",
   },
 };
 export default function RootLayout({
