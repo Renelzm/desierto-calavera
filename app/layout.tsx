@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: "Pagina de cocteleria y licores artesanales",
     keywords: ['Mezcal', 'Sotol', 'Coahuila', 'Licores Artesanales', 'Cocteleria', 'Bebidas Mexicanas', 'Desierto Calavera'],
   openGraph: { 
-    images: "/mini.jpg",
+    images: "/mini.png",
   },
 };
 
