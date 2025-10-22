@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Desierto Calavera",
   description: "Pagina de cocteleria y licores artesanales",
   openGraph: { 
-    images: "@/logo-transparente-blanco.png",
+    images: "/logo-transparente-blanco.png",
   },
 };
 
