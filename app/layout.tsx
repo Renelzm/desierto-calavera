@@ -24,14 +24,7 @@ export const metadata: Metadata = {
  openGraph: { 
     title: "Desierto Calavera", 
     description: "Pagina de cocteleria y licores artesanales",
-    images: [
-      {
-        url: "/logo-negro.jpg", 
-        width: 1200, // 
-        height: 630, //
-        alt: "Logo de Desierto Calavera",
-      }
-    ],
+    images: "/logo-negro.jpg", 
     locale: "es_MX", 
     type: "website", 
   },
@@ -41,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Desierto Calavera",
     description: "Pagina de cocteleria y licores artesanales",
-    images: ["/logo-negro.jpg"],
+    images: "/logo-negro.jpg",
   },
 };
 export default function RootLayout({
